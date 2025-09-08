@@ -1,0 +1,124 @@
+\section{玻尔兹曼统计}
+
+
+\mathrm{d}q \quad \text{vs} \quad \dj q\\
+
+
+配分函数
+\begin{equation}
+    Z_1=\sum_l{\omega _l\mathrm{e}^{-\beta \varepsilon _l}}
+\end{equation}
+粒子数
+\begin{equation}
+    N=\mathrm{e}^{-\alpha}Z_1
+\end{equation}
+内能
+\begin{equation}
+    U=-N\frac{\partial}{\partial \beta}\ln Z_1
+\end{equation}
+广义力-压强
+\begin{equation}
+    Y=-\frac{N}{\beta}\frac{\partial}{\partial y}\ln Z_1\Rightarrow p=\frac{N}{\beta}\frac{\partial}{\partial V}\ln Z_1
+    
+\end{equation}
+熵
+\begin{equation}
+    S=Nk\left( \ln Z_1-\beta \frac{\partial}{\partial \beta}\ln Z_1 \right) =k\ln \Omega 
+\end{equation}
+
+推导：
+
+配分函数
+\begin{equation}
+    Z_1=\sum_l{\omega _l\mathrm{e}^{-\beta \varepsilon _l}}
+\end{equation}
+玻尔兹曼分布
+\begin{equation}
+    
+\end{equation}
+
+
+粒子数
+\begin{equation}
+    \begin{aligned}
+        N&=\sum_l{a_l}
+\\
+&=\sum_l{\omega _l\mathrm{e}^{-\alpha -\beta \varepsilon _l}}
+\\
+&=\mathrm{e}^{-\alpha}\sum_l{\omega _l\mathrm{e}^{-\beta \varepsilon _l}}
+\\
+&=\mathrm{e}^{-\alpha}Z_1
+    \end{aligned}
+\end{equation}
+
+
+内能
+\begin{equation}
+    \begin{aligned}
+        U&=\sum_l{\varepsilon _la_l}
+\\
+&=\sum_l{\varepsilon _l\omega _l\mathrm{e}^{-\alpha -\beta \varepsilon _l}}
+\\
+&=\mathrm{e}^{-\alpha}\sum_l{\omega _l\left( \varepsilon _l\mathrm{e}^{-\beta \varepsilon _l} \right)}
+\\
+&=\mathrm{e}^{-\alpha}\sum_l{\omega _l\left( -\frac{\partial}{\partial \beta}\mathrm{e}^{-\beta \varepsilon _l} \right)}
+\\
+&=\mathrm{e}^{-\alpha}\left( -\frac{\partial}{\partial \beta}\sum_l{\omega _l\mathrm{e}^{-\beta \varepsilon _l}} \right) 
+\\
+&=\mathrm{e}^{-\alpha}\left( -\frac{\partial}{\partial \beta} \right) \sum_l{\omega _l\mathrm{e}^{-\beta \varepsilon _l}}
+\\
+&=-\mathrm{e}^{-\alpha}\frac{\partial}{\partial \beta}\sum_l{\omega _l\mathrm{e}^{-\beta \varepsilon _l}}
+\\
+&=-\frac{N}{Z_1}\frac{\partial}{\partial \beta}Z_1
+\\
+&=-N\frac{\partial}{\partial \beta}\ln Z_1
+    \end{aligned}
+\end{equation}
+
+
+
+广义力
+\begin{equation}
+    \begin{aligned}
+        Y&=\sum_l{\frac{\partial \varepsilon _l}{\partial y}a_l}
+\\
+&=\sum_l{\frac{\partial \varepsilon _l}{\partial y}\omega _l\mathrm{e}^{-\alpha -\beta \varepsilon _l}}
+\\
+&=\mathrm{e}^{-\alpha}\sum_l{\omega _l\left( \frac{\partial \varepsilon _l}{\partial y}\mathrm{e}^{-\beta \varepsilon _l} \right)}
+\\
+&=\mathrm{e}^{-\alpha}\sum_l{\omega _l\left( -\frac{1}{\beta}\frac{\partial}{\partial y}\mathrm{e}^{-\beta \varepsilon _l} \right)}
+\\
+&=\mathrm{e}^{-\alpha}\left( -\frac{1}{\beta}\frac{\partial}{\partial y}\sum_l{\omega _l\mathrm{e}^{-\beta \varepsilon _l}} \right) 
+\\
+&=\mathrm{e}^{-\alpha}\left( -\frac{1}{\beta}\frac{\partial}{\partial y} \right) \sum_l{\omega _l\mathrm{e}^{-\beta \varepsilon _l}}
+\\
+&=-\mathrm{e}^{-\alpha}\frac{1}{\beta}\frac{\partial}{\partial y}\sum_l{\omega _l\mathrm{e}^{-\beta \varepsilon _l}}
+\\
+&=-\frac{N}{Z_1}\frac{1}{\beta}\frac{\partial}{\partial y}Z_1
+\\
+&=-\frac{N}{\beta}\frac{1}{Z_1}\frac{\partial}{\partial y}Z_1
+\\
+&=-\frac{N}{\beta}\frac{\partial}{\partial y}\ln Z_1
+    \end{aligned}
+\end{equation}
+压强，取$Y=-p,y=V$
+\begin{equation}
+    \begin{aligned}
+        p=\frac{N}{\beta}\frac{\partial}{\partial V}\ln Z_1
+    \end{aligned}
+\end{equation}
+
+
+\begin{equation}
+    \begin{aligned}
+        
+    \end{aligned}
+\end{equation}
+
+
+\begin{equation}
+    \begin{aligned}
+        
+    \end{aligned}
+\end{equation}
+

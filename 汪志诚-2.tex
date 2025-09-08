@@ -1,0 +1,267 @@
+\section{均匀物质的热力学性质}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{内能、焓、自由能和吉布斯函数的全微分}
+
+
+
+
+
+
+
+
+
+
+麦克斯韦关系
+\begin{equation}
+    \begin{aligned}
+        \left( \frac{\partial T}{\partial V} \right) _S&=-\left( \frac{\partial p}{\partial S} \right) _V
+\\
+\left( \frac{\partial T}{\partial p} \right) _S&=\left( \frac{\partial V}{\partial S} \right) _p
+\\
+\left( \frac{\partial S}{\partial V} \right) _T&=\left( \frac{\partial p}{\partial T} \right) _V
+\\
+\left( \frac{\partial S}{\partial p} \right) _V&=-\left( \frac{\partial V}{\partial T} \right) _p
+    \end{aligned}
+\end{equation}
+
+
+
+
+\subsubsection{推导：麦克斯韦关系}
+
+1.
+$U$作为$S$，$V$的函数$U=U(S，V)$,其全微分为
+\begin{equation}
+    \mathrm{d}U=\left( \frac{\partial U}{\partial S} \right) _V\mathrm{d}S+\left( \frac{\partial U}{\partial V} \right) _S\mathrm{d}V
+\end{equation}
+同时热力学基本方程
+\begin{equation}
+    \mathrm{d}U=T\mathrm{d}S-p\mathrm{d}V
+\end{equation}
+比较可得
+\begin{equation}
+    \left( \frac{\partial U}{\partial S} \right) _V=T,\left( \frac{\partial U}{\partial V} \right) _S=-p
+\end{equation}
+由于偏导数的次序可交换: 
+\begin{equation}
+    \frac{\partial ^2U}{\partial V\partial S}=\frac{\partial ^2U}{\partial S\partial V}
+\end{equation}
+即
+\begin{equation}
+    \left[ \frac{\partial}{\partial V}\left( \frac{\partial U}{\partial S} \right) _V \right] _S=\left[ \frac{\partial}{\partial S}\left( \frac{\partial U}{\partial V} \right) _S \right] _V
+\end{equation}
+且
+\begin{equation}
+    \left[ \frac{\partial}{\partial V}\left( \frac{\partial U}{\partial S} \right) _V \right] _S=\left( \frac{\partial T}{\partial V} \right) _S,\left[ \frac{\partial}{\partial S}\left( \frac{\partial U}{\partial V} \right) _S \right] _V=-\left( \frac{\partial p}{\partial S} \right) _V
+\end{equation}
+得到麦克斯韦关系
+\begin{equation}
+    \left( \frac{\partial T}{\partial V} \right) _S=-\left( \frac{\partial p}{\partial S} \right) _V
+\end{equation}
+2.
+$H$作为$S$，$p$的函数$H=H(S，p)$，其全微分为
+\begin{equation}
+    \mathrm{d}H=\left( \frac{\partial H}{\partial S} \right) _{p}\mathrm{d}S+\left( \frac{\partial H}{\partial p} \right) _{S}\mathrm{d}p
+\end{equation}
+同时热力学基本方程
+\begin{equation}
+    \mathrm{d}H=T\mathrm{d}S+V\mathrm{d}p
+\end{equation}
+对比可得
+\begin{equation}
+    \left( \frac{\partial H}{\partial S} \right) _{p}=T,\left( \frac{\partial H}{\partial p} \right) _{S}=V
+\end{equation}
+由于偏导数的次序可交换: 
+\begin{equation}
+    \frac{\partial ^2H}{\partial p\partial S}=\frac{\partial ^2H}{\partial S\partial p}
+\end{equation}
+即
+\begin{equation}
+    \left[ \frac{\partial}{\partial p}\left( \frac{\partial H}{\partial S} \right) _p \right] _S=\left[ \frac{\partial}{\partial S}\left( \frac{\partial H}{\partial p} \right) _S \right] _p
+\end{equation}
+且
+\begin{equation}
+    \left[ \frac{\partial}{\partial p}\left( \frac{\partial H}{\partial S} \right) _p \right] _S=\left( \frac{\partial T}{\partial p} \right) _S,\left[ \frac{\partial}{\partial S}\left( \frac{\partial H}{\partial p} \right) _S \right] _p=\left( \frac{\partial V}{\partial S} \right) _p
+\end{equation}
+联立得到麦克斯韦关系
+\begin{equation}
+    \left( \frac{\partial T}{\partial p} \right) _S=\left( \frac{\partial V}{\partial S} \right) _p
+\end{equation}
+3.
+$F$作为$T$，$V$的函数$F=F(T,V)$，其全微分为
+\begin{equation}
+    \mathrm{d}F=\left( \frac{\partial F}{\partial T} \right) _V\mathrm{d}T+\left( \frac{\partial F}{\partial V} \right) _T\mathrm{d}V
+\end{equation}
+同时热力学基本方程
+\begin{equation}
+    \mathrm{d}F=-S\mathrm{d}T-p\mathrm{d}V
+\end{equation}
+对比可得
+\begin{equation}
+    \left( \frac{\partial F}{\partial T} \right) _V=-S,\left( \frac{\partial F}{\partial V} \right) _T=-p
+\end{equation}
+由于偏导数的次序可交换
+\begin{equation}
+    \frac{\partial ^2F}{\partial V\partial T}=\frac{\partial ^2F}{\partial T\partial V}
+\end{equation}
+即
+\begin{equation}
+    \left[ \frac{\partial}{\partial V}\left( \frac{\partial F}{\partial T} \right) _V \right] _T=\left[ \frac{\partial}{\partial T}\left( \frac{\partial F}{\partial V} \right) _T \right] _V
+\end{equation}
+且
+\begin{equation}
+    \left[ \frac{\partial}{\partial V}\left( \frac{\partial F}{\partial T} \right) _V \right] _T=-\left( \frac{\partial S}{\partial V} \right) _T,\left[ \frac{\partial}{\partial T}\left( \frac{\partial F}{\partial V} \right) _T \right] _V=-\left( \frac{\partial p}{\partial T} \right) _V
+\end{equation}
+联立得到麦克斯韦关系
+\begin{equation}
+    \left( \frac{\partial S}{\partial V} \right) _T=\left( \frac{\partial p}{\partial T} \right) _V
+\end{equation}
+
+
+4.
+$G$作为$T$, $p$的函数$G=G(T,p)$, 其全微分为
+\begin{equation}
+    \mathrm{d}G=\left( \frac{\partial G}{\partial T} \right) _p \mathrm{d}T+\left( \frac{\partial G}{\partial p} \right) _T \mathrm{d}p
+\end{equation}
+同时热力学基本方程
+\begin{equation}
+    \mathrm{d}G=-S\mathrm{d}T+V\mathrm{d}p
+\end{equation}
+对比可得
+\begin{equation}
+    \left( \frac{\partial G}{\partial T} \right) _p=-S,\left( \frac{\partial G}{\partial p} \right) _T=V
+\end{equation}
+由于偏导数的次序可交换
+\begin{equation}
+    \frac{\partial ^2G}{\partial T\partial p}=\frac{\partial ^2G}{\partial p\partial T}
+\end{equation}
+即
+\begin{equation}
+    \left[ \frac{\partial}{\partial p}\left( \frac{\partial G}{\partial T} \right) _p \right] _T=\left[ \frac{\partial}{\partial T}\left( \frac{\partial G}{\partial p} \right) _T \right] _p
+\end{equation}
+且
+\begin{equation}
+    \left[ \frac{\partial}{\partial p}\left( \frac{\partial G}{\partial T} \right) _p \right] _T=-\left( \frac{\partial S}{\partial p} \right) _T,\left[ \frac{\partial}{\partial T}\left( \frac{\partial G}{\partial p} \right) _T \right] _p=\left( \frac{\partial V}{\partial T} \right) _p
+\end{equation}
+联立得到麦克斯韦关系
+\begin{equation}
+    \left( \frac{\partial S}{\partial p} \right) _T=-\left( \frac{\partial V}{\partial T} \right) _p
+\end{equation}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{}
+
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{}
+
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{}
+
+
+
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{}
+
+
+
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{}

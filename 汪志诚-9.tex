@@ -1,0 +1,111 @@
+\section{系综理论}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{巨正则系综理论的热力学公式}
+
+
+
+平均粒子数
+\begin{equation}
+    \begin{aligned}
+        \bar{N}&=\sum_N{\sum_s{N\rho _{s,N}}}
+\\
+&=\sum_N{\sum_s{\frac{N}{\varXi}e^{-\alpha N-\beta E_s}}}
+\\
+&=\frac{1}{\varXi}\sum_N{\sum_s{Ne^{-\alpha N-\beta E_s}}}
+\\
+&=\frac{1}{\varXi}\sum_N{\sum_s{\left( -\frac{\partial}{\partial \alpha}e^{-\alpha N-\beta E_s} \right)}}
+\\
+&=\frac{1}{\varXi}\left( -\frac{\partial}{\partial \alpha}\sum_N{\sum_s{e^{-\alpha N-\beta E_s}}} \right) 
+\\
+&=\frac{1}{\varXi}\left( -\frac{\partial}{\partial \alpha} \right) \sum_N{\sum_s{e^{-\alpha N-\beta E_s}}}
+\\
+&=-\frac{1}{\varXi}\frac{\partial}{\partial \alpha}\sum_N{\sum_s{e^{-\alpha N-\beta E_s}}}
+\\
+&=-\frac{1}{\varXi}\frac{\partial}{\partial \alpha}\varXi 
+\\
+&=-\frac{\partial}{\partial \alpha}\ln \varXi 
+    \end{aligned}
+\end{equation}
+内能
+\begin{equation}
+    \begin{aligned}
+        U=\bar{E}&=\sum_N{\sum_s{E_s\rho _{s,N}}}
+\\
+&=\sum_N{\sum_s{\frac{E_s}{\varXi}e^{-\alpha N-\beta E_s}}}
+\\
+&=\frac{1}{\varXi}\sum_N{\sum_s{E_se^{-\alpha N-\beta E_s}}}
+\\
+&=\frac{1}{\varXi}\sum_N{\sum_s{\left( -\frac{\partial}{\partial \beta}e^{-\alpha N-\beta E_s} \right)}}
+\\
+&=\frac{1}{\varXi}\left( -\frac{\partial}{\partial \beta}\sum_N{\sum_s{e^{-\alpha N-\beta E_s}}} \right) 
+\\
+&=\frac{1}{\varXi}\left( -\frac{\partial}{\partial \beta} \right) \sum_N{\sum_s{e^{-\alpha N-\beta E_s}}}
+\\
+&=-\frac{1}{\varXi}\frac{\partial}{\partial \beta}\sum_N{\sum_s{e^{-\alpha N-\beta E_s}}}
+\\
+&=-\frac{1}{\varXi}\frac{\partial}{\partial \beta}\varXi 
+\\
+&=-\frac{\partial}{\partial \beta}\ln \varXi 
+    \end{aligned}
+\end{equation}
+广义力
+\begin{equation}
+    \begin{aligned}
+        Y&=\sum_N{\sum_s{\frac{\partial E_s}{\partial y}\rho _{s,N}}}
+\\
+&=\sum_N{\sum_s{\frac{\partial E_s}{\partial y}\frac{1}{\varXi}e^{-\alpha N-\beta E_s}}}
+\\
+&=\frac{1}{\varXi}\sum_N{\sum_s{\frac{\partial E_s}{\partial y}e^{-\alpha N-\beta E_s}}}
+\\
+&=\frac{1}{\varXi}\sum_N{\sum_s{\left( -\frac{1}{\beta}\frac{\partial}{\partial y}e^{-\alpha N-\beta E_s} \right)}}
+\\
+&=\frac{1}{\varXi}\left( -\frac{1}{\beta}\frac{\partial}{\partial y}\sum_N{\sum_s{e^{-\alpha N-\beta E_s}}} \right) 
+\\
+&=\frac{1}{\varXi}\left( -\frac{1}{\beta}\frac{\partial}{\partial y} \right) \sum_N{\sum_s{e^{-\alpha N-\beta E_s}}}
+\\
+&=-\frac{1}{\varXi}\frac{1}{\beta}\frac{\partial}{\partial y}\sum_N{\sum_s{e^{-\alpha N-\beta E_s}}}
+\\
+&=-\frac{1}{\beta}\frac{1}{\varXi}\frac{\partial}{\partial y}\varXi 
+\\
+&=-\frac{1}{\beta}\frac{\partial}{\partial y}\ln \varXi 
+    \end{aligned}
+\end{equation}
+
+
