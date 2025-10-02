@@ -1,0 +1,186 @@
+\section{麦克斯韦关系的简单应用}
+
+目标：利用麦克斯韦关系，将无法直接通过实验测量的物理量转化为可直接实验测量的物理量
+
+\newpage
+\subsection{推导}
+1.内能$U=U(T,V)$的全微分
+\begin{equation}
+    \mathrm{d}U=\left( \frac{\partial U}{\partial T} \right) _V\mathrm{d}T+\left( \frac{\partial U}{\partial V} \right) _T\mathrm{d}V
+\end{equation}
+2.热力学基本方程
+\begin{equation}
+    \mathrm{d}U=T\mathrm{d}S-p\mathrm{d}V
+\end{equation}
+3.熵$S=S(T,V)$的全微分
+\begin{equation}
+    \mathrm{d}S=\left( \frac{\partial S}{\partial T} \right) _V\mathrm{d}T+\left( \frac{\partial S}{\partial V} \right) _T\mathrm{d}V
+\end{equation}
+4.将熵的全微分代入热力学基本方程得到
+\begin{equation}
+    \begin{aligned}
+        \mathrm{d}U&=T\left[ \left( \frac{\partial S}{\partial T} \right) _V\mathrm{d}T+\left( \frac{\partial S}{\partial V} \right) _T\mathrm{d}V \right] -p\mathrm{d}V
+\\
+&=T\left( \frac{\partial S}{\partial T} \right) _V\mathrm{d}T+\left[ T\left( \frac{\partial S}{\partial V} \right) _T-p \right] \mathrm{d}V
+    \end{aligned}
+\end{equation}
+5.对比得到
+\begin{equation}
+    \left( \frac{\partial U}{\partial T} \right) _V=T\left( \frac{\partial S}{\partial T} \right) _V
+\end{equation}
+和
+\begin{equation}
+    \left( \frac{\partial U}{\partial V} \right) _T=T\left( \frac{\partial S}{\partial V} \right) _T-p
+\end{equation}
+6.利用定容热容定义
+\begin{equation}
+    C_V=\left( \frac{\partial U}{\partial T} \right) _V
+\end{equation}
+和麦克斯韦关系
+\begin{equation}
+    \left( \frac{\partial S}{\partial V} \right) _T=\left( \frac{\partial p}{\partial T} \right) _V
+\end{equation}
+得到
+\begin{equation}
+    C_V=T\left( \frac{\partial S}{\partial T} \right) _V
+\end{equation}
+且
+\begin{equation}
+    \left( \frac{\partial U}{\partial V} \right) _T=T\left( \frac{\partial p}{\partial T} \right) _V-p
+\end{equation}
+
+
+
+\newpage
+\subsection{推导：}
+1.焓$H=H(T,p)$的全微分
+\begin{equation}
+    \mathrm{d}H=\left( \frac{\partial H}{\partial T} \right) _p\mathrm{d}T+\left( \frac{\partial H}{\partial p} \right) _T\mathrm{d}p
+\end{equation}
+2.热力学基本方程
+\begin{equation}
+    \mathrm{d}H=T\mathrm{d}S+V\mathrm{d}p
+\end{equation}
+3.熵$S=S(T,p)$的全微分
+\begin{equation}
+    \mathrm{d}S=\left( \frac{\partial S}{\partial T} \right) _p\mathrm{d}T+\left( \frac{\partial S}{\partial p} \right) _T\mathrm{d}p
+\end{equation}
+4.将熵的全微分代入热力学基本方程得到
+\begin{equation}
+    \begin{aligned}
+        \mathrm{d}H&=T\left[ \left( \frac{\partial S}{\partial T} \right) _p\mathrm{d}T+\left( \frac{\partial S}{\partial p} \right) _T\mathrm{d}p \right] +V\mathrm{d}p
+\\
+&=T\left( \frac{\partial S}{\partial T} \right) _p\mathrm{d}T+\left[ T\left( \frac{\partial S}{\partial p} \right) _T+V \right] \mathrm{d}p
+    \end{aligned}
+\end{equation}
+5.对比得到
+\begin{equation}
+    \left( \frac{\partial H}{\partial T} \right) _p=T\left( \frac{\partial S}{\partial T} \right) _p
+\end{equation}
+和
+\begin{equation}
+    \left( \frac{\partial H}{\partial p} \right) _T=T\left( \frac{\partial S}{\partial p} \right) _T+V
+\end{equation}
+6.利用定容热容定义
+\begin{equation}
+    C_p=\left( \frac{\partial H}{\partial T} \right) _p
+\end{equation}
+和麦克斯韦关系
+\begin{equation}
+    \left( \frac{\partial S}{\partial p} \right) _T=-\left( \frac{\partial V}{\partial T} \right) _p
+\end{equation}
+得到
+\begin{equation}
+    C_p=T\left( \frac{\partial S}{\partial T} \right) _p
+\end{equation}
+且
+\begin{equation}
+    \left( \frac{\partial H}{\partial p} \right) _T=V-T\left( \frac{\partial V}{\partial T} \right) _p
+\end{equation}
+
+
+\subsection{推导}
+定容热容
+\begin{equation}
+    C_V=\left( \frac{\partial U}{\partial T} \right) _V=T\left( \frac{\partial S}{\partial T} \right) _V
+\end{equation}
+定容热容
+\begin{equation}
+    C_p=\left( \frac{\partial H}{\partial T} \right) _p=T\left( \frac{\partial S}{\partial T} \right) _p
+\end{equation}
+相减
+\begin{equation}
+    C_p-C_V=T\left( \frac{\partial S}{\partial T} \right) _p-T\left( \frac{\partial S}{\partial T} \right) _V
+\end{equation}
+
+根据附录的公式
+
+根据（这里还要再完善）
+\begin{equation}
+    S=S(T,V)=S(T,V(T,p))=S(T,p)
+\end{equation}
+得到
+\begin{equation}
+    \left( \frac{\partial S}{\partial T} \right) _p=\left( \frac{\partial S}{\partial T} \right) _V+\left( \frac{\partial S}{\partial V} \right) _T\left( \frac{\partial V}{\partial T} \right) _p
+\end{equation}
+代入得到
+\begin{equation}
+    \begin{aligned}
+        C_p-C_V&=T\left[ \left( \frac{\partial S}{\partial T} \right) _V+\left( \frac{\partial S}{\partial V} \right) _T\left( \frac{\partial V}{\partial T} \right) _p \right] -T\left( \frac{\partial S}{\partial T} \right) _V
+\\
+&=T\left( \frac{\partial S}{\partial V} \right) _T\left( \frac{\partial V}{\partial T} \right) _p
+    \end{aligned}
+\end{equation}
+利用麦克斯韦关系
+\begin{equation}
+    \left( \frac{\partial S}{\partial V} \right) _T=\left( \frac{\partial p}{\partial T} \right) _V
+\end{equation}
+得到两热容之差与物态方程的关系
+\begin{equation}
+    C_p-C_V=T\left( \frac{\partial p}{\partial T} \right) _V\left( \frac{\partial V}{\partial T} \right) _p
+\end{equation}
+
+
+\subsection{推导}
+
+\begin{equation}
+    pV=nRT
+\end{equation}
+写出
+\begin{equation}
+    \begin{aligned}
+        V&=\frac{nRT}{p}
+\\
+p&=\frac{nRT}{V}
+    \end{aligned}
+\end{equation}
+求偏导
+\begin{equation}
+    \begin{aligned}
+        \left( \frac{\partial p}{\partial T} \right) _V&=\frac{nR}{V}
+\\
+\left( \frac{\partial V}{\partial T} \right) _p&=\frac{nR}{p}
+    \end{aligned}
+\end{equation}
+代入
+\begin{equation}
+    C_p-C_V=T\left( \frac{\partial p}{\partial T} \right) _V\left( \frac{\partial V}{\partial T} \right) _p
+\end{equation}
+得到
+\begin{equation}
+    \begin{aligned}
+        C_p-C_V&=T\frac{nR}{V}\cdot \frac{nR}{p}
+\\
+&=\frac{n^2R^2T}{pV}
+\\
+&=\frac{n^2R^2T}{nRT}
+\\
+&=nR
+    \end{aligned}
+\end{equation}
+
+
+
+
+
+
