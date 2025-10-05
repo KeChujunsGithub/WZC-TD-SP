@@ -1,0 +1,287 @@
+\section{1.15 理想气体的熵}
+
+
+\subsection{总结}
+
+
+
+
+
+\newpage
+\subsection{推导}
+定容热容
+\begin{equation}
+    C_V=\frac{\mathrm{d}U}{\mathrm{d}T}
+\end{equation}
+写出
+\begin{equation}
+    \mathrm{d}U=C_V\mathrm{d}T
+\end{equation}
+摩尔定容热容
+\begin{equation}
+    C_{V,\mathrm{m}}=\frac{\mathrm{d}U_{\mathrm{m}}}{\mathrm{d}T}
+\end{equation}
+写出
+\begin{equation}
+    \mathrm{d}U_{\mathrm{m}}=C_{V,\mathrm{m}}\mathrm{d}T
+\end{equation}
+理想气体的状态方程
+\begin{equation}
+    pV=nRT
+\end{equation}
+写出
+\begin{equation}
+    \frac{p}{T}=\frac{nR}{V}
+\end{equation}
+1mol理想气体的状态方程
+\begin{equation}
+    pV_{\mathrm{m}}=RT
+\end{equation}
+写出
+\begin{equation}
+    \frac{p}{T}=\frac{R}{V_{\mathrm{m}}}
+\end{equation}
+热力学基本方程
+\begin{equation}
+    \mathrm{d}U=T\mathrm{d}S-p\mathrm{d}V
+\end{equation}
+写出
+\begin{equation}
+    \mathrm{d}S=\frac{\mathrm{d}U+p\mathrm{d}V}{T}=\frac{\mathrm{d}U}{T}+\frac{p\mathrm{d}V}{T}
+\end{equation}
+单位物质的量的熵
+\begin{equation}
+    \mathrm{d}U_{\mathrm{m}}=T\mathrm{d}S_{\mathrm{m}}-p\mathrm{d}V_{\mathrm{m}}
+\end{equation}
+写出
+\begin{equation}
+    \mathrm{d}S_{\mathrm{m}}=\frac{\mathrm{d}U_{\mathrm{m}}+p\mathrm{d}V_{\mathrm{m}}}{T}=\frac{\mathrm{d}U_{\mathrm{m}}}{T}+\frac{p\mathrm{d}V_{\mathrm{m}}}{T}
+\end{equation}
+得到
+\begin{equation}
+    \mathrm{d}S_{\mathrm{m}}=\frac{C_{V,\mathrm{m}}}{T}\mathrm{d}T+R\frac{\mathrm{d}V_{\mathrm{m}}}{V_{\mathrm{m}}}
+\end{equation}
+两边同时积分
+\begin{equation}
+    \int_{S_{\mathrm{m}0}}^{S_{\mathrm{m}}}{\mathrm{d}S_{\mathrm{m}}}=\int_{T_0}^T{\frac{C_{V,\mathrm{m}}\mathrm{d}T}{T}}+\int_{V_{\mathrm{m}0}}^{V_{\mathrm{m}}}{R\frac{\mathrm{d}V_{\mathrm{m}}}{V_{\mathrm{m}}}}
+\end{equation}
+若是常数
+\begin{equation}
+    \begin{aligned}
+        \int_{S_{\mathrm{m}0}}^{S_{\mathrm{m}}}{\mathrm{d}S_{\mathrm{m}}}&=C_{V,\mathrm{m}}\int_{T_0}^T{\frac{\mathrm{d}T}{T}}+R\int_{V_{\mathrm{m}0}}^{V_{\mathrm{m}}}{\frac{\mathrm{d}V_{\mathrm{m}}}{V_{\mathrm{m}}}}
+\\
+S_{\mathrm{m}}\mid_{S_{\mathrm{m}0}}^{S_{\mathrm{m}}}&=C_{V,\mathrm{m}}\ln T\mid_{T_0}^{T}+R\ln V_{\mathrm{m}}\mid_{V_{\mathrm{m}0}}^{V_{\mathrm{m}}}
+\\
+S_{\mathrm{m}}-S_{\mathrm{m}0}&=C_{V,\mathrm{m}}\left( \ln T-\ln T_0 \right) +R\left( \ln V_{\mathrm{m}}-\ln V_{\mathrm{m}0} \right) 
+    \end{aligned}
+\end{equation}
+得到
+\begin{equation}
+    S_{\mathrm{m}}=C_{V,\mathrm{m}}\ln T+R\ln V_{\mathrm{m}}+\left( S_{\mathrm{m}0}-C_{V,\mathrm{m}}\ln T_0-R\ln V_{\mathrm{m}0} \right) 
+\end{equation}
+得到
+\begin{equation}
+    S_{\mathrm{m}}=C_{V,\mathrm{m}}\ln T+R\ln V_{\mathrm{m}}+S_{\mathrm{m}0}^{\prime}
+\end{equation}
+其中
+\begin{equation}
+    S_{\mathrm{m}0}^{\prime}=S_{\mathrm{m}0}-C_{V,\mathrm{m}}\ln T_0-R\ln V_{\mathrm{m}0}
+\end{equation}
+两边同时乘n
+\begin{equation}
+    nS_{\mathrm{m}}=nC_{V,\mathrm{m}}\ln T+nR\ln V_{\mathrm{m}}+\left( nS_{\mathrm{m}0}-nC_{V,\mathrm{m}}\ln T_0-nR\ln V_{\mathrm{m}0} \right) 
+\end{equation}
+得到
+\begin{equation}
+    S=C_V\ln T+nR\ln V_{\mathrm{m}}+\left( S_0-C_V\ln T_0-nR\ln V_{\mathrm{m}0} \right) 
+\end{equation}
+得到
+\begin{equation}
+    S=C_V\ln T+nR\ln V_{\mathrm{m}}+S_{0}^{\prime}
+\end{equation}
+其中
+\begin{equation}
+    S_{0}^{\prime}=S_0-C_V\ln T_0-nR\ln V_{\mathrm{m}0}
+\end{equation}
+
+
+\newpage
+\subsection{推导}
+定压热容
+\begin{equation}
+    C_p=\frac{\mathrm{d}H}{\mathrm{d}T}
+\end{equation}
+得到
+\begin{equation}
+    \mathrm{d}H=C_p\mathrm{d}T
+\end{equation}
+摩尔定压热容
+\begin{equation}
+    C_{p,\mathrm{m}}=\frac{\mathrm{d}H_{\mathrm{m}}}{\mathrm{d}T}
+\end{equation}
+得到
+\begin{equation}
+    \mathrm{d}H_{\mathrm{m}}=C_{p,\mathrm{m}}\mathrm{d}T
+\end{equation}
+理想气体的状态方程
+\begin{equation}
+    pV=nRT
+\end{equation}
+写出
+\begin{equation}
+    \frac{p}{T}=\frac{nR}{V}
+\end{equation}
+1mol理想气体的状态方程
+\begin{equation}
+    pV_{\mathrm{m}}=RT
+\end{equation}
+写出
+\begin{equation}
+    \frac{p}{T}=\frac{R}{V_{\mathrm{m}}}
+\end{equation}
+热力学基本方程
+\begin{equation}
+    \mathrm{d}H=T\mathrm{d}S-V\mathrm{d}p
+\end{equation}
+写出
+\begin{equation}
+    \mathrm{d}S=\frac{\mathrm{d}H-V\mathrm{d}p}{T}==\frac{\mathrm{d}H}{T}-\frac{V\mathrm{d}p}{T}
+\end{equation}
+单位物质的量的热力学基本方程
+\begin{equation}
+    \mathrm{d}H_{\mathrm{m}}=T\mathrm{d}S_{\mathrm{m}}-V_{\mathrm{m}}\mathrm{d}p
+\end{equation}
+写出
+\begin{equation}
+    \mathrm{d}S_{\mathrm{m}}=\frac{\mathrm{d}H_{\mathrm{m}}-V_{\mathrm{m}}\mathrm{d}p}{T}=\frac{\mathrm{d}H_{\mathrm{m}}}{T}-\frac{V_{\mathrm{m}}\mathrm{d}p}{T}
+\end{equation}
+得出
+\begin{equation}
+    \mathrm{d}S_{\mathrm{m}}=\frac{C_{p,\mathrm{m}}}{T}\mathrm{d}T-R\frac{\mathrm{d}p}{p}
+\end{equation}
+两边积分
+\begin{equation}
+    \int_{S_{\mathrm{m}0}}^{S_{\mathrm{m}}}{\mathrm{d}S_{\mathrm{m}}}=\int_{T_0}^T{\frac{C_{p,\mathrm{m}}\mathrm{d}T}{T}}-\int_{p_0}^p{R\frac{\mathrm{d}p}{p}}
+\end{equation}
+若为常数
+\begin{equation}
+    \begin{aligned}
+        \int_{S_{\mathrm{m}0}}^{S_{\mathrm{m}}}{\mathrm{d}S_{\mathrm{m}}}&=C_{p,\mathrm{m}}\int_{T_0}^T{\frac{\mathrm{d}T}{T}}-R\int_{p_0}^p{\frac{\mathrm{d}p}{p}}
+\\
+S_{\mathrm{m}}\mid_{S_{\mathrm{m}0}}^{S_{\mathrm{m}}}&=C_{p,\mathrm{m}}\ln T\mid_{T_0}^{T}-R\ln p\mid_{p_0}^{p}
+\\
+S_{\mathrm{m}}-S_{\mathrm{m}0}&=C_{p,\mathrm{m}}\left( \ln T-\ln T_0 \right) -R\left( \ln p-\ln p_0 \right) 
+    \end{aligned}
+\end{equation}
+得到
+\begin{equation}
+    S_{\mathrm{m}}=C_{p,\mathrm{m}}\ln T-R\ln p+\left( S_{\mathrm{m}0}-C_{p,\mathrm{m}}\ln T_0+R\ln p_0 \right) 
+\end{equation}
+得到
+\begin{equation}
+    S_{\mathrm{m}}=C_{p,\mathrm{m}}\ln T-R\ln p+S_{\mathrm{m}0}^{\prime}
+\end{equation}
+其中
+\begin{equation}
+    S_{\mathrm{m}0}^{\prime}=S_{\mathrm{m}0}-C_{p,\mathrm{m}}\ln T_0+R\ln p_0
+\end{equation}
+两边同时乘n
+\begin{equation}
+    nS_{\mathrm{m}}=nC_{p,\mathrm{m}}\ln T-nR\ln p+\left( nS_{\mathrm{m}0}-nC_{p,\mathrm{m}}\ln T_0+nR\ln p_0 \right) 
+\end{equation}
+得到
+\begin{equation}
+    S=C_p\ln T-nR\ln p+\left( S_0-C_p\ln T_0+nR\ln p_0 \right) 
+\end{equation}
+得到
+\begin{equation}
+    S=C_p\ln T-nR\ln p+S_{0}^{\prime}
+\end{equation}
+其中
+\begin{equation}
+    S_{0}^{\prime}=S_0-C_p\ln T_0+nR\ln p_0
+\end{equation}
+
+
+\newpage
+\subsection{例 1.15.1 }
+某种理想气体经准静态等温过程，体积由 $V_{A}$ 变为 $V_{B}$. 求过程前后气体的熵变.
+
+\subsubsection{解答：}
+根据
+\begin{equation}
+    \begin{aligned}
+        S&=nC_{p,\mathrm{m}}\ln T-nR\ln p+S_0
+\\
+&=C_p\ln T-nR\ln p+S_0
+    \end{aligned}
+\end{equation}
+初态熵
+\begin{equation}
+    S_{\mathrm{A}}=C_V\ln T+nR\ln V_{\mathrm{A}}+S_0
+\end{equation}
+末态熵
+\begin{equation}
+    S_{\mathrm{B}}=C_V\ln T+nR\ln V_{\mathrm{B}}+S_0
+\end{equation}
+作差得到熵变
+\begin{equation}
+    \begin{aligned}
+        \Delta S&=S_{\mathrm{B}}-S_{\mathrm{A}}
+\\
+&=C_V\ln T+nR\ln V_{\mathrm{A}}+S_0-C_V\ln T-nR\ln V_{\mathrm{B}}-S_0
+\\
+&=nR\ln V_{\mathrm{A}}-nR\ln V_{\mathrm{B}}
+\\
+&=nR\ln \frac{V_{\mathrm{B}}}{V_{\mathrm{A}}}
+    \end{aligned}
+\end{equation}
+讨论
+如果$\frac{V_{B}}{V_{A}}$>1, 则有$S_{B}-S_{A}>0$，熵增, 过程中气体从热源吸热; 
+
+如果$\frac{V_{B}}{V_{A}}$<1, 则有$S_{B}-S_{A}<0$，熵减，过程中气体给热源放热.
+
+\subsection{例 1.15.2 }
+某种理想气体经准静态等温过程，压强由 $p_{A}$ 变为 $p_{B}$. 求过程前后气体的熵变.
+
+\subsubsection{解答：}
+根据
+\begin{equation}
+    \begin{aligned}
+        S&=nC_{p,\mathrm{m}}\ln T-nR\ln p+S_0
+\\
+&=C_p\ln T-nR\ln p+S_0
+    \end{aligned}
+\end{equation}
+初态熵
+\begin{equation}
+    S_{\mathrm{A}}=C_p\ln T-nR\ln p_{\mathrm{A}}+S_0
+\end{equation}
+末态熵
+\begin{equation}
+    S_{\mathrm{B}}=C_p\ln T-nR\ln p_{\mathrm{B}}+S_0
+\end{equation}
+作差得到熵变
+\begin{equation}
+    \begin{aligned}
+        \Delta S&=S_{\mathrm{B}}-S_{\mathrm{A}}
+\\
+&=C_p\ln T-nR\ln p_{\mathrm{B}}+S_0-C_p\ln T+nR\ln p_{\mathrm{B}}-S_0
+\\
+&=-nR\ln p_{\mathrm{B}}+nR\ln p_{\mathrm{A}}
+\\
+&=nR\ln \frac{p_{\mathrm{A}}}{p_{\mathrm{B}}}
+    \end{aligned}
+\end{equation}
+讨论
+如果$\frac{p_{A}}{p_{B}}$>1, 则有$S_{B}-S_{A}>0$，熵增, 过程中气体从热源吸热; 
+
+如果$\frac{p_{A}}{p_{B}}$<1, 则有$S_{B}-S_{A}<0$，熵减，过程中气体给热源放热.
+
+
+
+
+\subsection{解答：}
+
+
+
