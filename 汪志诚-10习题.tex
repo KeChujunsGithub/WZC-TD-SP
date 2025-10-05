@@ -1,0 +1,83 @@
+\section{习题10}
+
+\newpage
+\subsection{10-1}
+试从(10.1.10)出发，以 $\Delta p, \Delta S$ 为自变量，证明
+$$ W \propto e^{\frac{1}{2kT} \left( \frac{\partial V}{\partial p} \right)_S (\Delta p)^2 - \frac{1}{2kC_p} (\Delta S)^2}, $$
+从而证明
+$$ \overline{\Delta S \Delta p} = 0, $$
+$$ \overline{(\Delta S)^2} = kC_p, $$
+$$ \overline{(\Delta p)^2} = -kT \left( \frac{\partial p}{\partial V} \right)_S. $$
+
+\newpage
+\subsection{10-2}
+利用式 (10.1.12) 求得的 $\overline{(\Delta T)^2}, \overline{(\Delta V)^2}$ 和 $\overline{\Delta T \Delta V}$ 证明：
+$$ \overline{\Delta T \Delta S} = kT, $$
+$$ \overline{\Delta p \Delta V} = -kT, $$
+$$ \overline{\Delta S \Delta V} = kT \left( \frac{\partial V}{\partial T} \right)_p, $$
+$$ \overline{\Delta p \Delta T} = \frac{kT^2}{C_v} \left( \frac{\partial p}{\partial T} \right)_v. $$
+
+\newpage
+\subsection{10-3}
+试证明开系涨落的基本公式
+$$ W \propto e^{-\frac{\Delta T \Delta S - \Delta p \Delta V + \Delta \mu \Delta N}{2kT}}, $$
+并据此证明，在 $T, V$ 恒定时，有
+$$ \overline{(\Delta N)^2} = kT \left( \frac{\partial N}{\partial \mu} \right)_{T,V}, $$
+$$ \overline{(\Delta \mu)^2} = kT \left( \frac{\partial \mu}{\partial N} \right)_{T,V}, $$
+$$ \overline{\Delta N \Delta \mu} = kT. $$
+
+\newpage
+\subsection{10-4}
+试证明，对于顺磁介质，有
+$$ W \propto e^{-\frac{C_m}{2kT^2} (\Delta T)^2 - \frac{\mu_0}{2kT} \left( \frac{\partial m}{\partial \mathcal{H}} \right)_T (\Delta m)^2}, $$
+并据此证明
+$$ \overline{\Delta T \Delta m} = 0, $$
+$$ \overline{(\Delta T)^2} = \frac{kT^2}{C_m}, $$
+$$ \overline{(\Delta m)^2} = \frac{kT}{\mu_0} \left( \frac{\partial m}{\partial \mathcal{H}} \right)_T. $$
+
+\newpage
+\subsection{10-5}
+试由式(10.2.1)导出式(10.2.9)。
+
+\newpage
+\subsection{10-6}
+在18℃的温度下，观察半径为 $0.4 \times 10^{-6}$m 的粒子在黏度为 $2.78 \times 10^{-3}$Pa·s 的液体中的布朗运动，测得粒子在时间间隔10s的位移平方的平均值为
+$$ \overline{x^2} = 3.3 \times 10^{-12}  \text{m}^2. $$
+试根据这些数据求玻耳兹曼常量 $k$ 的值。
+
+\newpage
+\subsection{10-7}
+电流计带有用细丝悬挂的反射镜。由于反射镜受到气体分子碰撞而施加的力矩不平衡，反射镜不停地进行着无规则的扭摆运动。根据能量均分定理，反射镜转动角度 $\varphi$ 的方均值 $\overline{\varphi^2}$ 满足
+$$ \frac{1}{2} A \overline{\varphi^2} = \frac{1}{2} kT. $$
+对于很细的石英丝，弹性系数 $A = 10^{-13}$ N·m·rad$^{-2}$，计算300K下的 $\sqrt{\overline{\varphi^2}}$。
+
+\newpage
+\subsection{10-8}
+三维布朗颗粒在各向同性介质中运动，朗之万方程为
+$$ \frac{dp_i}{dt} = -\gamma p_i + F_i(t), \quad i = 1, 2, 3. $$
+其涨落力满足
+$$ \overline{F_i(t)} = 0, $$
+$$ \overline{F_i(t) F_j(t')} = 2m\gamma k T \delta_{ij} \delta (t-t'). $$
+试证明，经过时间 $t$ 布朗颗粒位移平方的平均值为
+$$ \overline{\left[ \mathbf{x} - \mathbf{x}(0) \right]^2} = \sum_{i} \overline{\left[ x_i - x_i(0) \right]^2} = \frac{6kT}{m\gamma} t. $$
+
+\newpage
+\subsection{10-9}
+在均匀恒定的外电场 $\mathscr{E}$ 作用下，电荷量为 $q$，质量为 $m$ 的布朗颗粒在流体中运动，运动方程为
+$$ m \frac{dv}{dt} = -\alpha v + q \mathscr{E} + F(t), $$
+$\alpha$ 是黏性阻力系数，$F(t)$ 是涨落力。达到定常状态时，颗粒的平均速度为
+$$ \bar{v} = \frac{q\mathscr{E}}{\alpha}. $$
+以 $\mu = \frac{\bar{v}}{\mathscr{E}}$ 表示迁移率，试证明迁移率 $\mu$ 与扩散系数 $D$ 间存在关系
+$$ \frac{\mu}{D} = \frac{q}{kT}. $$
+上述称为爱因斯坦关系。
+
+\newpage
+\subsection{10-10}
+考虑布朗颗粒在竖直方向的运动。取 $z$ 轴（向上）沿竖直方向，朗之万方程为
+$$ m \frac{dv_z}{dt} = -\alpha v_z - mg + F_z(t) $$
+(a) 试证明,达到定常状态后,布朗颗粒的平均速度为
+$$ \overline{v_z} = -\frac{mg}{\alpha}. $$
+(b) 达到定常状态后,布朗颗粒的流量为零,即
+$$ J_z = -D \frac{dn}{dz} + n \overline{v_z} = 0, $$
+其中 $n(z)$ 为布朗颗粒的密度。试由此导出达到定常状态后布朗颗粒按高度的分布。
+

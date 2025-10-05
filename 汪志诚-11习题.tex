@@ -1,0 +1,95 @@
+\section{习题11}
+
+\newpage
+\subsection{11-1}
+以 $\omega dt$ 表示分子在 $t$ 到 $t+dt$ 时间内与其他分子发生一次碰撞的概率。试证明分子在时间 $t$ 内未受碰撞的概率为
+$$ P(t) = e^{-\omega t} $$
+
+\newpage
+\subsection{11-2}
+以 $\mathcal{A}(t)dt$ 表示一个分子在时间 $t$ 内未受碰撞而在 $t+dt$ 内被碰的概率。试证明
+$$ \mathcal{A}(t)dt = e^{-\omega t}\omega dt, $$
+及
+$$ \int_{0}^{\infty}\mathcal{A}(t)dt = 1. $$
+
+\newpage
+\subsection{11-3}
+以 $\tau$ 表示分子在两次碰撞之间所经历的平均时间，称为碰撞自由时间。试证明
+$$ \tau = \int_{0}^{\infty} \mathcal{A}(t) t dt = \frac{1}{\omega}. $$
+
+\newpage
+\subsection{11-4}
+气体中含有离子。在离子浓度足够低的情况下，可以忽略离子间的相互作用。平衡状态下离子遵从麦克斯韦速度分布。试根据玻耳兹曼方程的驰豫时间近似证明在弱电场下离子的电导率可以表示为
+$$ \sigma = \frac{nq^2}{m} \tau_0, $$
+其中 $m$ 是离子的质量，$q$ 是电荷量，$n$ 是离子的数密度，$\tau_0$ 是驰豫时间的某种平均值。
+
+\newpage
+\subsection{11-5}
+气体含有两种分子，其质量分别为 $m_{1}$ 和 $m_{2}$。试求在平衡状态下，一个质量为 $m_{1}$ 的分子与质量为 $m_{2}$ 的分子的平均碰撞频率。
+
+\newpage
+\subsection{11-6}
+如果气体中只有一种分子，试证明一个分子在单位时间内的被碰次数为
+$$ \overline{\Theta} = \sqrt{2 \pi n d^2} \bar{v}, $$
+并计算在0℃及1 atm下一个氧分子的平均碰撞数，已知氧分子的 $d=3.62\times10^{-10}$ m。
+
+\newpage
+\subsection{11-7}
+如果气体有两种分子，试证明一个第一种分子每秒平均被碰次数为
+$$ \overline{\Theta}_1 = \overline{\Theta}_{11} + \overline{\Theta}_{12} $$
+$$ = 4n_1d_1^2\sqrt{\frac{\pi kT}{m_1}} + 2n_2d_2^2\left(\frac{2\pi kT}{m_1}\right)^{\frac{1}{2}}\left(1+\frac{m_1}{m_2}\right)^{\frac{1}{2}}, $$
+当第一种分子是电子而第二种分子是普通的分子或离子时，
+$$ d_1 \sim 10^{-13} \, \text{cm}, \quad d_2 \sim 10^{-8} \, \text{cm}, $$
+故
+$$ \overline{\Theta}_{11} << \overline{\Theta}_{12}, $$
+同时
+$$ m_1 << m_2, $$
+试证明
+$$ \overline{\Theta}_1 \approx \overline{\Theta}_{12} \approx n_2d_1^2\sqrt{\frac{\pi kT}{2m_1}}. $$
+
+\newpage
+\subsection{11-8}
+气体分子的平均自由程定义为 $ l = \frac{\bar{v}}{\Theta} $，试证明
+$$ l = \frac{1}{\sqrt{2}\pi n d^2} $$
+并利用习题 11-6 所给数据计算 0 ℃ 和 1 atm 下氧分子的平均自由程。
+
+\newpage
+\subsection{11-9}
+被吸附的气体分子在表面上作二维运动，试写出二维气体的玻耳兹曼积分微分方程。
+
+\newpage
+\subsection{11-10}
+试根据 $H$ 函数的定义
+$$ H = \iint f \ln f  d\omega d\tau $$
+证明在平衡状态下理想气体的 $H$ 为
+$$ H = N \left( \ln n + \frac{3}{2} \ln \frac{m}{2 \pi k T} - \frac{3}{2} \right) $$
+将这结果与单原子理想气体的熵（7.6.2）比较，证明
+$$ S = -kH + Nk \left[ 1 + \ln \left( \frac{m}{k} \right)^3 \right] $$
+
+\newpage
+\subsection{11-11}
+试由细微平衡原理导出费米分布。在单位时间内，两个费米子由状态$i$和状态$j$跃迁到状态$k$和状态$l$的跃迁数，与状态$i$和状态$j$被占据的概率$f_i$和$f_j$及状态$k$和状态$l$未被占据的概率$1-f_k$和$1-f_l$成正比。这跃迁数可表示为
+$$ A_{ij}^{kl} f_i f_j (1-f_k) (1-f_l) $$
+同理，单位时间内，两个费米子由状态$k$和状态$l$跃迁到状态$i$和状态$j$的跃迁数为
+$$ A_{kl}^{ij} f_k f_l (1-f_i) (1-f_j) $$
+细微平衡要求
+$$ A_{kl}^{ij} f_k f_l (1-f_i) (1-f_j) = A_{ij}^{kl} f_i f_j (1-f_k) (1-f_l). $$
+由跃迁概率的对称性知
+$$ A_{kl}^{ij} = A_{ij}^{kl}, $$
+所以平衡时有
+$$ f_k f_l (1-f_i) (1-f_j) = f_i f_j (1-f_k) (1-f_l). $$
+由这函数方程可导出费米分布。
+
+\newpage
+\subsection{11-12}
+试由细微平衡原理导出玻色分布。玻色子有聚集的倾向，与上题相应的函数方程为
+$$ f_k f_l (1 + f_i) (1 + f_j) = f_i f_j (1 + f_k) (1 + f_l). $$
+由这函数方程可导出玻色分布。
+
+\newpage
+\subsection{11-13}
+试由式(11.6.10)导出式(11.6.11)。
+
+\newpage
+\subsection{11-14}
+试证明式(11.6.11)的解是式(11.6.12)。

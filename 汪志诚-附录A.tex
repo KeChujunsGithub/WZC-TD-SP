@@ -1,0 +1,58 @@
+\section{附录A}
+
+
+
+对于
+\begin{equation}
+    \mathrm{d}F=\frac{\partial F}{\partial x}\mathrm{d}x+\frac{\partial F}{\partial y}\mathrm{d}y+\frac{\partial F}{\partial z}\mathrm{d}z=0
+\end{equation}
+当$\mathrm{d}z=0$
+得到
+\begin{equation}
+    \begin{aligned}
+        \frac{\partial F}{\partial x}\mathrm{d}x+\frac{\partial F}{\partial y}\mathrm{d}y=0
+\\
+\frac{\partial F}{\partial y}\mathrm{d}y=-\frac{\partial F}{\partial x}\mathrm{d}x
+    \end{aligned}
+\end{equation}
+得到
+\begin{equation}
+    \left( \frac{\partial y}{\partial x} \right) _z=-\frac{\left( \frac{\partial F}{\partial x} \right) _{y,z}}{\left( \frac{\partial F}{\partial y} \right) _{z,x}}
+\end{equation}
+当$\mathrm{d}y=0$
+得到
+\begin{equation}
+    \begin{aligned}
+        \frac{\partial F}{\partial z}\mathrm{d}z+\frac{\partial F}{\partial x}\mathrm{d}x=0
+\\
+\frac{\partial F}{\partial x}\mathrm{d}x=-\frac{\partial F}{\partial z}\mathrm{d}z
+    \end{aligned}
+\end{equation}
+得到
+\begin{equation}
+    \left( \frac{\partial x}{\partial z} \right) _y=-\frac{\left( \frac{\partial F}{\partial z} \right) _{x,y}}{\left( \frac{\partial F}{\partial x} \right) _{y,z}}
+\end{equation}
+当$\mathrm{d}x=0$
+得到
+\begin{equation}
+    \begin{aligned}
+        \frac{\partial F}{\partial y}\mathrm{d}y+\frac{\partial F}{\partial z}\mathrm{d}z=0
+\\
+\frac{\partial F}{\partial z}\mathrm{d}z=-\frac{\partial F}{\partial y}\mathrm{d}y
+    \end{aligned}
+\end{equation}
+得到
+\begin{equation}
+    \left( \frac{\partial z}{\partial y} \right) _x=-\frac{\left( \frac{\partial F}{\partial y} \right) _{z,x}}{\left( \frac{\partial F}{\partial z} \right) _{x,y}}
+\end{equation}
+综合
+\begin{equation}
+    \begin{aligned}
+        \left( \frac{\partial y}{\partial x} \right) _z\left( \frac{\partial x}{\partial z} \right) _y\left( \frac{\partial z}{\partial y} \right) _x&=-\frac{{\color[RGB]{240, 0, 0} \left( \frac{\partial F}{\partial x} \right) _{y,z}}}{{\color[RGB]{0, 160, 0} \left( \frac{\partial F}{\partial y} \right) _{z,x}}}\frac{{\color[RGB]{0, 0, 240} \left( \frac{\partial F}{\partial z} \right) _{x,y}}}{{\color[RGB]{240, 0, 0} \left( \frac{\partial F}{\partial x} \right) _{y,z}}}\frac{{\color[RGB]{0, 160, 0} \left( \frac{\partial F}{\partial y} \right) _{z,x}}}{{\color[RGB]{0, 0, 240} \left( \frac{\partial F}{\partial z} \right) _{x,y}}}
+\\
+&=-1
+    \end{aligned}
+\end{equation}
+
+
+
