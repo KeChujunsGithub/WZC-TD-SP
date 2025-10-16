@@ -1,10 +1,154 @@
 \section{物态方程}
 
 
-体膨胀系数：
-$$\alpha = \frac{1}{V}\left( \frac{\partial V}{\partial T}\right)_{p} $$
-压强系数：
-$$\beta = \frac{1}{p}\left( \frac{\partial p}{\partial T}\right)_{V} $$
-等温压缩系数：
-$$\kappa_{T} = - \frac{1}{V}\left( \frac{\partial V}{\partial p}\right)_{T}$$
+
+\subsection{笔记：物态方程}
+物态方程：给出温度与状态参量之间的函数关系的方程
+
+
+简单系统的物态方程
+\begin{equation}
+    f(p,V,T)=0
+\end{equation}
+
+式(1.3.1)的具体函数关系视不同的物质而异.
+由于 $p$、$V$、$T$之间存在这一函数关系，在实际问题中，我们可以根据方便将其中两个量看作独立参量，而将第三个量看作这两个量的函数.
+例如，
+若将 $V$ 和 $T$看作独立参量，$p$ 便是它们的函数；
+若将 $T$ 和 $p$看作独立参量，$V$ 便是它们的函数.
+若将 $p$ 和 $V$看作独立参量，$T$ 便是它们的函数.
+
+\subsection{笔记：与物态方程相关的物理量}
+体膨胀系数：描述在压强保持不变的条件下,温度升高 1 K 所引起的物体体积的相对变化
+\begin{equation}
+    \alpha = \frac{1}{V}\left( \frac{\partial V}{\partial T}\right)_{p} 
+\end{equation}
+压强系数：描述在体积保持不变的条件下,温度升高1K所引起的物体压强的相对变化
+\begin{equation}
+     \beta = \frac{1}{p}\left( \frac{\partial p}{\partial T}\right)_{V} 
+\end{equation}
+等温压缩系数：在温度保持不变的条件下,增加单位压强所引起的物体体积的相对变化
+\begin{equation}
+     \kappa_{T} = - \frac{1}{V}\left( \frac{\partial V}{\partial p}\right)_{T}
+\end{equation}
+由于，偏导数关系
+\begin{equation}
+     \left(\frac{\partial V}{\partial p}\right)_T\left(\frac{\partial p}{\partial T}\right)_V\left(\frac{\partial T}{\partial V}\right)_p=-1
+\end{equation}
+三个物理量之间的关系
+\begin{equation}
+    \alpha=\kappa_T\beta p
+\end{equation}
+
+\newpage
+\subsection{推导:}
+参考附录
+考虑状态函数 
+\begin{equation}
+    f(p, V, T) = 0
+\end{equation}
+计算全微分
+\begin{equation}
+\mathrm{d}f=\frac{\partial f}{\partial p}\mathrm{d}p+\frac{\partial f}{\partial V}\mathrm{d}V+\frac{\partial f}{\partial T}\mathrm{d}T
+\end{equation}
+且全微分为0
+\begin{equation}
+\mathrm{d}f=0
+\end{equation}
+得到
+\begin{equation}
+\frac{\partial f}{\partial p}\mathrm{d}p+\frac{\partial f}{\partial V}\mathrm{d}V+\frac{\partial f}{\partial T}\mathrm{d}T=0
+\end{equation}
+当$\mathrm{d}T=0$
+得到
+\begin{equation}
+\begin{aligned}
+\frac{\partial f}{\partial p}\mathrm{d}p+\frac{\partial f}{\partial V}\mathrm{d}V=0
+\\
+\frac{\partial f}{\partial V}\mathrm{d}V=-\frac{\partial f}{\partial p}\mathrm{d}p
+\end{aligned}
+\end{equation}
+得到
+\begin{equation}
+\left( \frac{\partial V}{\partial p} \right) _T=-\frac{\left( \frac{\partial f}{\partial p} \right) _{V,T}}{\left( \frac{\partial f}{\partial V} \right) _{T,p}}
+\end{equation}
+当$\mathrm{d}V=0$
+得到
+\begin{equation}
+\begin{aligned}
+\frac{\partial f}{\partial T}\mathrm{d}T+\frac{\partial f}{\partial p}\mathrm{d}p=0
+\\
+\frac{\partial f}{\partial p}\mathrm{d}p=-\frac{\partial f}{\partial T}\mathrm{d}T
+\end{aligned}
+\end{equation}
+得到
+\begin{equation}
+\left( \frac{\partial p}{\partial T} \right) _V=-\frac{\left( \frac{\partial f}{\partial T} \right) _{p,V}}{\left( \frac{\partial f}{\partial p} \right) _{V,T}}
+\end{equation}
+当$\mathrm{d}p=0$
+得到
+\begin{equation}
+\begin{aligned}
+\frac{\partial f}{\partial T}\mathrm{d}T+\frac{\partial f}{\partial V}\mathrm{d}V=0
+\\
+\frac{\partial f}{\partial T}\mathrm{d}T=-\frac{\partial f}{\partial V}\mathrm{d}V
+\end{aligned}
+\end{equation}
+得到
+\begin{equation}
+\left( \frac{\partial T}{\partial V} \right) _p=-\frac{\left( \frac{\partial f}{\partial V} \right) _{T,p}}{\left( \frac{\partial f}{\partial T} \right) _{p,V}}
+\end{equation}
+综合
+\begin{equation}
+\begin{aligned}
+\left( \frac{\partial V}{\partial p} \right) _T\left( \frac{\partial p}{\partial T} \right) _V\left( \frac{\partial T}{\partial V} \right) _p&=-\frac{{\color[RGB]{240, 0, 0} \left( \frac{\partial f}{\partial p} \right) _{V,T}}}{{\color[RGB]{0, 160, 0} \left( \frac{\partial f}{\partial V} \right) _{T,p}}}\frac{{\color[RGB]{0, 0, 240} \left( \frac{\partial f}{\partial T} \right) _{p,V}}}{{\color[RGB]{240, 0, 0} \left( \frac{\partial f}{\partial p} \right) _{V,T}}}\frac{{\color[RGB]{0, 160, 0} \left( \frac{\partial f}{\partial V} \right) _{T,p}}}{{\color[RGB]{0, 0, 240} \left( \frac{\partial f}{\partial T} \right) _{p,V}}}
+\
+&=-1
+\end{aligned}
+\end{equation}
+
+\newpage
+\subsection{推导：}
+1.根据三个物理量
+\begin{equation}
+    \begin{aligned}
+        \alpha &=\frac{1}{V}\left( \frac{\partial V}{\partial T} \right) _p
+\\
+\beta &=\frac{1}{p}\left( \frac{\partial p}{\partial T} \right) _V
+\\
+\kappa _T&=-\frac{1}{V}\left( \frac{\partial V}{\partial p} \right) _T
+    \end{aligned}
+\end{equation}
+写出
+\begin{equation}
+    \begin{aligned}
+        \left( \frac{\partial V}{\partial T} \right) _p&=V\alpha 
+\\
+\left( \frac{\partial p}{\partial T} \right) _V&=p\beta 
+\\
+\left( \frac{\partial V}{\partial p} \right) _T&=-V\kappa _T
+    \end{aligned}
+\end{equation}
+2.根据
+\begin{equation}
+    \left( \frac{\partial V}{\partial p} \right) _T\left( \frac{\partial p}{\partial T} \right) _V\left( \frac{\partial T}{\partial V} \right) _p=-1
+\end{equation}
+得到
+\begin{equation}
+    \left( \frac{\partial V}{\partial p} \right) _T\left( \frac{\partial p}{\partial T} \right) _V=-\left( \frac{\partial T}{\partial V} \right) _{p}^{-1}
+\end{equation}
+即
+\begin{equation}
+    \left( \frac{\partial V}{\partial p} \right) _T\left( \frac{\partial p}{\partial T} \right) _V=-\left( \frac{\partial V}{\partial T} \right) _p
+\end{equation}
+3.代入得到
+\begin{equation}
+    -V\kappa _T\cdot p\beta =-V\alpha 
+\end{equation}
+即
+\begin{equation}
+    \alpha =\kappa _T\beta p
+\end{equation}
+
+
 

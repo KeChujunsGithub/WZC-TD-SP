@@ -142,17 +142,111 @@ $$\ln V = \int (\alpha dT - \kappa_T dp).$$
 \begin{equation}
     \frac{dV}{V}=\frac{1}{T}\mathrm{d}T-\frac{1}{p}\mathrm{d}p
 \end{equation}
-两边同时积分
-
+两边同时定积分
+\begin{equation}
+    \int_{V_0}^V{\frac{\mathrm{d}V}{V}}=\int_{T_0}^T{\frac{\mathrm{d}T}{T}}-\int_{p_0}^p{\frac{\mathrm{d}p}{p}}
+\end{equation}
+计算
+\begin{equation}
+    \begin{aligned}
+        \ln V\mid_{V_0}^{V}&=\ln T\mid_{T_0}^{T}-\ln p\mid_{p_0}^{p}
+\\
+\ln V-\ln V_0&=\left( \ln T-\ln T_0 \right) -\left( \ln p-\ln p_0 \right) 
+\\
+\ln V-\ln T+\ln p&=\ln V_0-\ln T_0+\ln p_0
+\\
+\ln \frac{pV}{T}&=\ln \frac{p_0V_0}{T_0}
+\\
+\frac{pV}{T}&=\frac{p_0V_0}{T_0}
+    \end{aligned}
+\end{equation}
+因为是常数
+\begin{equation}
+    \frac{p_0V_0}{T_0}=C
+\end{equation}
 得到
+\begin{equation}
+    \frac{pV}{T}=C
+\end{equation}
+即
+\begin{equation}
+    pV=CT
+\end{equation}
 
+
+还有其他的写法，记得补充
 
 
 
 \newpage
 \subsection{1-3}
 简单固体和液体的体胀系数 $\alpha$ 和等温压缩系数 $\kappa_T$ 数值都很小，在一定温度范围内可以把 $\alpha$ 和 $\kappa_T$ 看作常量。试证明简单固体和液体的物态方程可近似表示为 [式 (1.3.14)]
-$$V(T, p) = V_0 (T_0, 0) \left[ 1 + \alpha (T - T_0) - \kappa_T p \right].$$
+$$V(T, p) = V_0 (T_0, 0) \left[ 1 + \alpha (T - T_0) - \kappa_T p \right]$$
+
+\subsubsection{解答}
+具有
+\begin{equation}
+    V=V\left( T,p \right) 
+\end{equation}
+求全微分
+\begin{equation}
+    \mathrm{d}V=\left( \frac{\partial V}{\partial T} \right) _p\mathrm{d}T+\left( \frac{\partial V}{\partial p} \right) _T\mathrm{d}p
+\end{equation}
+两边同时乘以
+\begin{equation}
+    \frac{\mathrm{d}V}{V}=\frac{1}{V}\left( \frac{\partial V}{\partial T} \right) _p\mathrm{d}T+\frac{1}{V}\left( \frac{\partial V}{\partial p} \right) _T\mathrm{d}p
+\end{equation}
+根据体胀系数 $\alpha$和等温压缩系数 $\kappa_T$
+\begin{equation}
+    \alpha =\frac{1}{V}\left( \frac{\partial V}{\partial T} \right) _p,\kappa _T=-\frac{1}{V}\left( \frac{\partial V}{\partial p} \right) _T
+\end{equation}
+得到
+\begin{equation}
+    \frac{\mathrm{d}V}{V}=\alpha \mathrm{d}T-\kappa _T\mathrm{d}p
+\end{equation}
+两边同时定积分
+\begin{equation}
+    \int_{V_0}^V{\frac{\mathrm{d}V}{V}}=\int_{T_0}^T{\alpha \mathrm{d}T}-\int_{p_0}^p{\kappa _T\mathrm{d}p}
+\end{equation}
+两个系数都是常数
+\begin{equation}
+    \int_{V_0}^V{\frac{\mathrm{d}V}{V}}=\alpha \int_{T_0}^T{\mathrm{d}T}-\kappa _T\int_{p_0}^p{\mathrm{d}p}
+\end{equation}
+计算
+\begin{equation}
+    \begin{aligned}
+        \ln V\mid_{V_0}^{V}&=\alpha T\mid_{T_0}^{T}-\kappa _Tp\mid_{p_0}^{p}
+\\
+\ln V-\ln V_0&=\alpha \left( T-T_0 \right) -\kappa _T\left( p-p_0 \right) 
+\\
+\ln \frac{V}{V_0}&=\alpha \left( T-T_0 \right) -\kappa _T\left( p-p_0 \right) 
+\\
+\frac{V}{V_0}&=e^{\alpha \left( T-T_0 \right) -\kappa _T\left( p-p_0 \right)}
+\\
+V&=V_0e^{\alpha \left( T-T_0 \right) -\kappa _T\left( p-p_0 \right)}
+    \end{aligned}
+\end{equation}
+得到
+\begin{equation}
+    V(T,p)=V_0(T_0,p_0)e^{\alpha \left( T-T_0 \right) -\kappa _T\left( p-p_0 \right)}
+\end{equation}
+利用泰勒展开
+\begin{equation}
+    e^x\approx 1+x
+\end{equation}
+写出
+\begin{equation}
+    e^{\alpha \left( T-T_0 \right) -\kappa _T\left( p-p_0 \right)}\approx 1+\alpha \left( T-T_0 \right) -\kappa _T\left( p-p_0 \right) 
+\end{equation}
+得到
+\begin{equation}
+    V(T,p)=V_0(T_0,p_0)\left[ 1+\alpha \left( T-T_0 \right) -\kappa _T\left( p-p_0 \right) \right] 
+\end{equation}
+当$p_0=0$
+得到
+\begin{equation}
+    V(T,p)=V_0(T_0,0)\left[ 1+\alpha \left( T-T_0 \right) -\kappa _Tp \right] 
+\end{equation}
 
 \newpage
 \subsection{1-4}
@@ -242,6 +336,75 @@ $$\eta = 1 - \frac{T_2}{T_1}.$$
 \newpage
 \subsection{1-18}
 理想气体分别经等压过程和等体过程，温度由 $T_1$ 升至 $T_2$。假设 $\gamma$ 是常数，试证明前者的熵增加值为后者的 $\gamma$ 倍。
+
+和例题1.15.1类似
+\subsubsection{解答}
+1.等压过程
+根据
+\begin{equation}
+    S=C_p\ln T-nR\ln p+S_0
+\end{equation}
+初态
+\begin{equation}
+    S_1=C_p\ln T_1-nR\ln p+S_0
+\end{equation}
+末态
+\begin{equation}
+    S_2=C_p\ln T_2-nR\ln p+S_0
+\end{equation}
+作差得到熵变
+\begin{equation}
+    \begin{aligned}
+        \Delta S_p&=S_2-S_1
+\\
+&=C_p\ln T_2-nR\ln p+S_0-C_p\ln T_2+nR\ln p-S_0
+\\
+&=C_p\ln T_2-C_p\ln T_2
+\\
+&=C_p\ln \frac{T_2}{T_1}
+    \end{aligned}
+\end{equation}
+2.等容过程
+根据
+\begin{equation}
+    S=C_V\ln T+nR\ln V+S_0
+\end{equation}
+初态
+\begin{equation}
+    S_1=C_V\ln T_1+nR\ln V+S_0
+\end{equation}
+末态
+\begin{equation}
+    S_2=C_V\ln T_2+nR\ln V+S_0
+\end{equation}
+作差得到熵变
+\begin{equation}
+    \begin{aligned}
+        \Delta S_V&=S_2-S_1
+\\
+&=C_V\ln T_2+nR\ln V+S_0-C_V\ln T_1-nR\ln V-S_0
+\\
+&=C_V\ln T_2-C_V\ln T_1
+\\
+&=C_V\ln \frac{T_2}{T_1}
+    \end{aligned}
+\end{equation}
+3.
+\begin{equation}
+    \frac{\Delta S_p}{\Delta S_V}=\frac{C_p\ln \frac{T_2}{T_1}}{C_V\ln \frac{T_2}{T_1}}=\frac{C_p}{C_V}
+\end{equation}
+关系
+\begin{equation}
+    \frac{C_p}{C_V}=\gamma 
+\end{equation}
+得到
+\begin{equation}
+    \frac{\Delta S_p}{\Delta S_V}=\gamma 
+\end{equation}
+
+\subsubsection{解答：写法二}
+不直接利用结论，从定义开始计算
+
 
 \newpage
 \subsection{1-19}

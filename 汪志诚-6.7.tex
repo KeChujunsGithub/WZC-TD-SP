@@ -1,0 +1,287 @@
+\section{6.7}
+
+
+\newpage
+\subsection{推导:玻色-爱因斯坦分布}
+在玻色-爱因斯坦统计中，由费玻色-爱因斯坦系统的微观状态数推导玻色-爱因斯坦分布
+
+1.玻色-爱因斯坦系统的微观状态数
+\begin{equation}
+    \Omega _{\mathrm{B}.\mathrm{E}.}=\prod_l{\frac{\left( \omega _l+a_l-1 \right) !}{a_l!\left( \omega _l-1 \right) !}}
+\end{equation}
+取对数
+\begin{equation}
+    \begin{aligned}
+        \ln \Omega &=\ln \prod_l{\frac{\left( \omega _l+a_l-1 \right) !}{a_l!\left( \omega _l-1 \right) !}}
+\\
+&=\sum_l{\ln \frac{\left( \omega _l+a_l-1 \right) !}{a_l!\left( \omega _l-1 \right) !}}
+\\
+&=\sum_l{\left[ \ln \left( \omega _l+a_l-1 \right) !-\ln a_l!-\ln \left( \omega _l-1 \right) ! \right]}
+    \end{aligned}
+\end{equation}
+2.假设$a_l\gg 1,\omega _l\gg 1$，因而$\omega _l+a_l-1\approx \omega _l+a_l,\omega _l-1\approx \omega _l$,
+利用近似公式
+\begin{equation}
+    \ln m!=m\left( \ln m-1 \right) 
+\end{equation}
+写出
+\begin{equation}
+    \begin{aligned}
+        \ln \left( \omega _l+a_l-1 \right) !&=\left( \omega _l+a_l-1 \right) \left[ \ln \left( \omega _l+a_l-1 \right) -1 \right] \approx \left( \omega _l+a_l \right) \left[ \ln \left( \omega _l+a_l \right) -1 \right] 
+\\
+\ln a_l!&=a_l\left( \ln a_l-1 \right) 
+\\
+\ln \left( \omega _l-1 \right) !&=\left( \omega _l-1 \right) \left[ \ln \left( \omega _l-1 \right) -1 \right] \approx \omega _l\left( \ln \omega _l-1 \right) 
+    \end{aligned}
+\end{equation}
+得到
+\begin{equation}
+    \begin{aligned}
+        \ln \Omega &=\sum_l{\left[ \left( \omega _l+a_l \right) \left[ \ln \left( \omega _l+a_l \right) -1 \right] -a_l\left( \ln a_l-1 \right) -\omega _l\left( \ln \omega _l-1 \right) \right]}
+\\
+&=\sum_l{\left[ \left( \omega _l+a_l \right) \ln \left( \omega _l+a_l \right) -\omega _l-a_l-a_l\ln a_l+a_l-\omega _l\ln \omega _l+\omega _l \right]}
+\\
+&=\sum_l{\left[ \left( \omega _l+a_l \right) \ln \left( \omega _l+a_l \right) -a_l\ln a_l-\omega _l\ln \omega _l \right]}
+    \end{aligned}
+\end{equation}
+3.变分
+\begin{equation}
+    \begin{aligned}
+        \delta \ln \Omega &=\delta \left\{ \sum_l{\left[ \left( \omega _l+a_l \right) \ln \left( \omega _l+a_l \right) -a_l\ln a_l-\omega _l\ln \omega _l \right]} \right\} 
+\\
+&=\sum_l{\delta \left[ \left( \omega _l+a_l \right) \ln \left( \omega _l+a_l \right) -a_l\ln a_l-\omega _l\ln \omega _l \right]}
+\\
+&=\sum_l{\left\{ \delta \left[ \left( \omega _l+a_l \right) \ln \left( \omega _l+a_l \right) \right] -\delta \left( a_l\ln a_l \right) -\delta \left( \omega _l\ln \omega _l \right) \right\}}
+    \end{aligned}
+\end{equation}
+其中
+\begin{equation}
+    \begin{aligned}
+        \delta \left[ \left( \omega _l+a_l \right) \ln \left( \omega _l+a_l \right) \right] &=\ln \left( \omega _l+a_l \right) \delta \left( \omega _l+a_l \right) +\left( \omega _l+a_l \right) \delta \ln \left( \omega _l+a_l \right) 
+\\
+&=\ln \left( \omega _l+a_l \right) \delta a_l+\left( \omega _l+a_l \right) \frac{\delta a_l}{\omega _l+a_l}
+\\
+&=\ln \left( \omega _l+a_l \right) \delta a_l+\delta a_l
+    \end{aligned}
+\end{equation}
+且
+\begin{equation}
+    \begin{aligned}
+        \delta \left( a_l\ln a_l \right) &=\ln a_l\delta a_l+a_l\delta \ln a_l
+\\
+&=\ln a_l\delta a_l+a_l\frac{\delta a_l}{a_l}
+\\
+&=\ln a_l\delta a_l+\delta a_l
+    \end{aligned}
+\end{equation}
+且
+\begin{equation}
+    \delta \left( \omega _l\ln \omega _l \right) =0
+\end{equation}
+得到
+\begin{equation}
+    \begin{aligned}
+        \delta \ln \Omega &=\sum_l{\left[ \ln \left( \omega _l+a_l \right) \delta a_l+\delta a_l-\ln a_l\delta a_l-\delta a_l-0 \right]}
+\\
+&=\sum_l{\left[ \ln \left( \omega _l+a_l \right) \delta a_l-\ln a_l\delta a_l \right]}
+\\
+&=\sum_l{\left[ \ln \left( \omega _l+a_l \right) -\ln a_l \right] \delta a_l}
+    \end{aligned}
+\end{equation}
+根据极大值的分布的条件
+\begin{equation}
+    \delta \ln \Omega =0
+\end{equation}
+得到
+\begin{equation}
+    \sum_l{\left[ \ln \left( \omega _l+a_l \right) -\ln a_l \right] \delta a_l}=0
+\end{equation}
+
+4.分布不是完全独立的，粒子数守恒和能量守恒
+\begin{equation}
+    N=\sum_l{a_l},E=\sum_l{a_l\varepsilon _l}
+\end{equation}
+不是完全独立的，满足
+\begin{equation}
+    \delta N=\sum_l{\delta a_l}=0,\delta E=\sum_l{\varepsilon _l\delta a_l}=0
+\end{equation}
+两边乘以拉格朗日乘子
+\begin{equation}
+    \alpha \delta N=\sum_l{\alpha \delta a_l}=0,\beta \delta E=\sum_l{\beta \varepsilon _l\delta a_l}=0
+\end{equation}
+对于，减去
+\begin{equation}
+    \delta \ln \Omega -\alpha \delta N-\beta \delta E=0
+\end{equation}
+即
+\begin{equation}
+    \begin{aligned}
+        \sum_l{\left[ \ln \left( \omega _l+a_l \right) -\ln a_l \right] \delta a_l}-\sum_l{\alpha \delta a_l}-\sum_l{\beta \varepsilon _l\delta a_l}&=0
+\\
+\sum_l{\left[ \ln \left( \omega _l+a_l \right) -\ln a_l-\alpha -\beta \varepsilon _l \right] \delta a_l}&=0
+    \end{aligned}
+\end{equation}
+
+根据拉格朗日乘子法原理
+\begin{equation}
+    \ln \left( \omega _l+a_l \right) -\ln a_l-\alpha -\beta \varepsilon _l=0
+\end{equation}
+计算
+\begin{equation}
+    \begin{aligned}
+        \ln \frac{\omega _l+a_l}{a_l}=\alpha +\beta \varepsilon _l
+\\
+\frac{\omega _l+a_l}{a_l}=e^{\alpha +\beta \varepsilon _l}
+\\
+\frac{\omega _l}{a_l}+1=e^{\alpha +\beta \varepsilon _l}
+\\
+\frac{\omega _l}{a_l}=e^{\alpha +\beta \varepsilon _l}-1
+    \end{aligned}
+\end{equation}
+得到
+\begin{equation}
+    a_l=\frac{\omega _l}{e^{\alpha +\beta \varepsilon _l}-1}
+\end{equation}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\subsection{推导:费米-狄拉克分布}
+在费米-狄拉克统计中，由费米-狄拉克系统的微观状态数推导费米-狄拉克分布
+
+1.费米-狄拉克系统的微观状态数
+\begin{equation}
+    \Omega _{\mathrm{F}.\mathrm{D}.}=\prod_l{\frac{\omega _l!}{a_l!\left( \omega _l-a_l \right) !}}
+\end{equation}
+取对数
+\begin{equation}
+    \begin{aligned}
+        \ln \Omega &=\ln \prod_l{\frac{\omega _l!}{a_l!\left( \omega _l-a_l \right) !}}
+\\
+&=\sum_l{\ln \frac{\omega _l!}{a_l!\left( \omega _l-a_l \right) !}}
+\\
+&=\sum_l{\left[ \ln \omega _l!-\ln a_l!-\ln \left( \omega _l-a_l \right) ! \right]}
+    \end{aligned}
+\end{equation}
+2.假设$a_l\gg 1,\omega _l\gg 1,\omega _l-a_l\gg 1$
+利用近似公式
+\begin{equation}
+    \ln m!=m\left( \ln m-1 \right) 
+\end{equation}
+写出
+\begin{equation}
+    \begin{aligned}
+        \ln \omega _l!&=\omega _l\left( \ln \omega _l-1 \right) 
+\\
+\ln a_l!&=a_l\left( \ln a_l-1 \right) 
+\\
+\ln \left( \omega _l-a_l \right) !&=\left( \omega _l-a_l \right) \left[ \ln \left( \omega _l-a_l \right) -1 \right] 
+    \end{aligned}
+\end{equation}
+得到
+\begin{equation}
+    \begin{aligned}
+        \ln \Omega &=\sum_l{\left[ \omega _l\left( \ln \omega _l-1 \right) -a_l\left( \ln a_l-1 \right) -\left( \omega _l-a_l \right) \left( \ln \left( \omega _l-a_l \right) -1 \right) \right]}
+\\
+&=\sum_l{\left[ \omega _l\ln \omega _l-\omega _l-a_l\ln a_l+a_l-\left( \omega _l-a_l \right) \ln \left( \omega _l-a_l \right) -a_l+\omega _l \right]}
+\\
+&=\sum_l{\left[ \omega _l\ln \omega _l-a_l\ln a_l-\left( \omega _l-a_l \right) \ln \left( \omega _l-a_l \right) \right]}
+    \end{aligned}
+\end{equation}
+3.变分
+\begin{equation}
+    \begin{aligned}
+        \delta \ln \Omega &=\delta \left\{ \sum_l{\left[ \omega _l\ln \omega _l-a_l\ln a_l-\left( \omega _l-a_l \right) \ln \left( \omega _l-a_l \right) \right]} \right\} 
+\\
+&=\sum_l{\delta \left[ \omega _l\ln \omega _l-a_l\ln a_l-\left( \omega _l-a_l \right) \ln \left( \omega _l-a_l \right) \right]}
+\\
+&=\sum_l{\left\{ \delta \left( \omega _l\ln \omega _l \right) -\delta \left( a_l\ln a_l \right) -\delta \left[ \left( \omega _l-a_l \right) \ln \left( \omega _l-a_l \right) \right] \right\}}
+    \end{aligned}
+\end{equation}
+其中
+\begin{equation}
+    \delta \left( \omega _l\ln \omega _l \right) =0
+\end{equation}
+且
+\begin{equation}
+    \begin{aligned}
+        \delta \left( a_l\ln a_l \right) &=\ln a_l\delta a_l+a_l\delta \ln a_l
+\\
+&=\ln a_l\delta a_l+a_l\frac{\delta a_l}{a_l}
+\\
+&=\ln a_l\delta a_l+\delta a_l
+    \end{aligned}
+\end{equation}
+且
+\begin{equation}
+    \begin{aligned}
+        \delta \left[ \left( \omega _l-a_l \right) \ln \left( \omega _l-a_l \right) \right] &=\ln \left( \omega _l-a_l \right) \delta \left( \omega _l-a_l \right) +\left( \omega _l-a_l \right) \delta \ln \left( \omega _l-a_l \right) 
+\\
+&=\ln \left( \omega _l-a_l \right) \delta a_l+\left( \omega _l-a_l \right) \small{\frac{\delta a_l}{\omega _l-a_l}}
+\\
+&=\ln \left( \omega _l-a_l \right) \delta a_l+\delta a_l
+    \end{aligned}
+\end{equation}
+得到
+\begin{equation}
+    \begin{aligned}
+        \delta \ln \Omega &=\sum_l{\left[ 0-\ln a_l\delta a_l-\delta a_l+\ln \left( \omega _l-a_l \right) \delta a_l+\delta a_l \right]}
+\\
+&=\sum_l{\left[ -\ln a_l\delta a_l+\ln \left( \omega _l-a_l \right) \delta a_l \right]}
+\\
+&=\sum_l{\left[ \ln \left( \omega _l-a_l \right) -\ln a_l \right] \delta a_l}
+    \end{aligned}
+\end{equation}
+
+4.根据极大值的分布的条件
+\begin{equation}
+    \delta \ln \Omega =0
+\end{equation}
+得到
+\begin{equation}
+    \sum_l{\left[ \ln \left( \omega _l-a_l \right) -\ln a_l \right] \delta a_l}=0
+\end{equation}
+4.分布不是完全独立的，粒子数守恒和能量守恒
+\begin{equation}
+    N=\sum_l{a_l},E=\sum_l{a_l\varepsilon _l}
+\end{equation}
+不是完全独立的，满足
+\begin{equation}
+    \delta N=\sum_l{\delta a_l}=0,\delta E=\sum_l{\varepsilon _l\delta a_l}=0
+\end{equation}
+两边乘以拉格朗日乘子
+\begin{equation}
+    \alpha \delta N=\sum_l{\alpha \delta a_l}=0,\beta \delta E=\sum_l{\beta \varepsilon _l\delta a_l}=0
+\end{equation}
+减去
+\begin{equation}
+    \delta \ln \Omega -\alpha \delta N-\beta \delta E=0
+\end{equation}
+即
+\begin{equation}
+    \begin{aligned}
+        \sum_l{\left[ \ln \left( \omega _l-a_l \right) -\ln a_l \right] \delta a_l}-\sum_l{\alpha \delta a_l}-\sum_l{\beta \varepsilon _l\delta a_l}&=0
+\\
+\sum_l{\left[ \ln \left( \omega _l-a_l \right) -\ln a_l-\alpha -\beta \varepsilon _l \right] \delta a_l}&=0
+    \end{aligned}
+\end{equation}
+
+根据拉格朗日乘子法原理
+\begin{equation}
+    \mathrm{ln}\left( \omega _l-a_l \right) -\ln a_l-\alpha -\beta \varepsilon _l=0
+\end{equation}
+计算
+\begin{equation}
+    \begin{aligned}
+        \ln \frac{\omega _l-a_l}{a_l}=\alpha +\beta \varepsilon _l
+\\
+\frac{\omega _l-a_l}{a_l}=e^{\alpha +\beta \varepsilon _l}
+\\
+\frac{\omega _l}{a_l}-1=e^{\alpha +\beta \varepsilon _l}
+\\
+\frac{\omega _l}{a_l}=e^{\alpha +\beta \varepsilon _l}+1
+    \end{aligned}
+\end{equation}
+得到费米-狄拉克分布
+\begin{equation}
+    a_l=\frac{\omega _l}{e^{\alpha +\beta \varepsilon _l}+1}
+\end{equation}
